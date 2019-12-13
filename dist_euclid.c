@@ -16,19 +16,7 @@ float difx;
 float dify;
 float difz;	
 
-/*
-	for (i = 0; i < 2; i++){
-		for (j = 0; j < 2; j++){
-			teste[cont] = mote_coordenadas[i][j];
-			cont++;		
-		}	
-	}
-	for (i = 0; i < 2; i++){
-		for (j = 0; j < 2; j++){
-			printf("%.2f\n", teste[i])
-		}	
-	}
-*/	 
+	 
 	difx = mote_coordenadas[0][0] - eventos_coordenadas[0][0];
 	dify = mote_coordenadas[0][1] - eventos_coordenadas[0][1];
 	difz = mote_coordenadas[0][2] - eventos_coordenadas[0][2];
@@ -37,12 +25,7 @@ float difz;
 	printf("dify = %.3f\n", dify);
 	printf("difz = %.3f\n", difz);	
 	printf("%.3f\n", fun_dist_euclid(difx, dify, difz));
-/*
-	if (fun_dist_euclid(difx, dify) <= RANGE){
-		printf("O evento ocorre.\n");
-	
-	}
-*/
+
 }
 
 
